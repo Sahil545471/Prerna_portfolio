@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header h1{
+    color: white;
+    padding: 0px 50px  ;
+}
+.contact{
+    padding: 2px 50px  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.contact a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 90px;
+    border-radius: 8px;
+    background-color: rgb(128, 34, 0);
+   color: white;
+   font-size: 1.2rem;
+   border: 1px solid white;
+   text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.text_box{
+    width: 50%; 
+}
+.image_box{
+    margin-top: 10px;
+}
+.image_box img{
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+
+}
+.gallary a{
+    padding: 10px 20px;
+    background-color: rgb(49, 36, 231);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2   px solid rgb(14, 13, 13);
+    position: relative;
+    top: 50px;
+}
+.photos{
+    position: relative;
+  grid-template-columns: auto;
+    display: none;
+    
+}
+.photos img{
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.photos img:hover{
+    transform: scale(1.1)
+}
+.info div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info .fa-brands,.info .fa-solid{
+    padding: 10px;
+    font-size: 2rem;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    header{
+        height: 95px;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .contact{
+        padding: 10px 0px;
+    }
+    .container{
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 95px;
+        width: 100%;
+    }
+    .text_box{
+        margin-top: 10px;
+        width: 90%;   
+    }
+    .image_box img{
+        height: 65vh;
+        width: 100vw;
+        border-radius: 2px;
+    }
+    .photos{
+        position: relative;
+        top: 300px; 
+        display: none;
+    }
+    .photos img{
+        height: 200px;
+        width: 42%;
+        border-radius: 20px;
+        grid-template-rows: auto;
+        
+    }
+    .info{
+        height: 110px;
+        width: 100vw;
+        /* background-color: darkgreen; */
+        position: relative;
+        top: 300px;
+    }
+}
